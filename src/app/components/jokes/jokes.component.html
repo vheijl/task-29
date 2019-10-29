@@ -1,0 +1,11 @@
+<div *ngIf="joke" >
+    <p class="joke">{{ joke.joke }}</p>
+    <div class="progressBarContainer">
+        <div [ngClass] = "showProgress ? 'progressBar' : ''"
+            [ngStyle] = "{'animation-duration.ms': timeoutMS}"></div>
+    </div>
+</div>
+<div class="credits">
+    <p><a href="https://icanhazdadjoke.com/api">API courtesy icanhazdadjoke</a></p>
+    <p>By Victor Heijler</p>
+</div>

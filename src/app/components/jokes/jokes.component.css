@@ -1,0 +1,39 @@
+.progressBar {
+    display: block;
+    height: 15px;
+    animation: progress;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: #26c5ff;
+    border-radius: 5px;
+    /* margin: 0 20px; */
+}
+
+.progressBarContainer {
+    background: #f4f4f4;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.joke {
+    font-size: 24px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 100%
+    }
+}
